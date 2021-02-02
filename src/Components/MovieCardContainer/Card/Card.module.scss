@@ -1,0 +1,30 @@
+
+    .card {
+        border-bottom: 1px solid rgba($color: red, $alpha: 0.2);
+        box-shadow: 0 2px 2px 0 rgba(34,36,38,.15);
+        background: #F2F2F2;
+        border-radius: 1px;
+        padding: 1vw;
+        margin: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            width: 70%;
+            align-self: center;
+            border-radius: 5px;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            
+        }
+        h1 {
+            padding: 1vh;
+        }
+        p {
+            padding: 1vh;
+        }
+    }

@@ -1,25 +1,35 @@
 import React from "react";
 import styles from "./Card.module.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 
 const Card = (props: any) => {
 
-  const {title, genres, vote_average, homepage, overview} = props.movie
-  console.log('hi', title);
+  const {title, genres, vote_average, homepage, overview, original_language, release_date ,poster_path } = props.movie
   
   
 
   return (
     <div>
       <article className = {styles.card}>
-        <div>
-          <h1>{title}</h1>
+        <div className = {styles.infoContainer}>
+          <div>
+            <h1>{title}</h1>
+            <p>{overview}</p>
+          </div>
+          <div>
+            <p>{vote_average}<FontAwesomeIcon icon = {faStar} className = {styles.star} /></p>
+
+          </div>            
         </div>
-        <div>
-          {/* <p>{genres[0].name}</p> */}
-          <p>Rating {vote_average}</p>
-        </div>
+        <footer>
+          <p>Language: {original_language}</p>
+          <p>Release date: {release_date}</p>
+        </footer>
       </article>      
     </div>
   );

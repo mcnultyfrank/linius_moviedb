@@ -10,21 +10,35 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
-    height: 10vh;
-    padding: 2vw;
+    padding: 0.5vw;
+    h1 {
+        background-color: rgba(34,36,38,.15);
+        font-size: 3rem;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+        padding: 0.5vw;
+        span {
+            color: #BF3641;
+            border-radius: 5px;
+
+        }
+    }
     div {
         display: flex;
         flex-direction: row;
         align-items: center;
+        img {
+            width: 20%;
+        }
         p {
             padding: 1vw;
         }
     }
-    h1{
-        font-size: 3rem;
-        padding-right: 1vw;
-    }
+    
+    
     .menuIcon {
+        color: #BF3641;
         cursor: pointer;
 
     }
@@ -37,7 +51,7 @@
     transition: 0.3s ease;
     z-index: 1;
     width: 30vw;
-    height: 90%;
+    height: 100%;
     // border-top-left-radius: 20px;
     // border-bottom-left-radius: 20px;
     display: flex;
@@ -48,7 +62,7 @@
     // justify-content: space-around;
     color: $offWhite;
     box-shadow: 0 2px 2px 0 rgba(34,36,38,.15);
-    background: rgba($color: $black, $alpha: 0.9) ;   
+    background: rgba($color: $black, $alpha: 1) ;   
     ul {
         display: flex;
         flex-direction: column;
@@ -63,8 +77,16 @@
             padding: 2vw;
             border-bottom: 1px solid white;
             li {
-                font-size: 3vw;
+                font-size: 2vw;
                 list-style: none;
+            }
+            label {
+                cursor: pointer;
+                font-size: 2vw;
+                transition: 0.5s;
+                &:hover{
+                    color: #BF3641;
+                }
             }
             input {
                 font-size: 3vw;

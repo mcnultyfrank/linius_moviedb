@@ -16,7 +16,6 @@ const Header = (props: any) => {
   const displayContents = {
     transform: 'translateX(0%)',
   }
-
   return (
     <div>
       <header className = {styles.header}>
@@ -28,14 +27,10 @@ const Header = (props: any) => {
           <p>Filter</p>
         </div>
       </header>
-        <head>
-          
-        </head>
       <section>
         <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList}>
-            <ul>
+          <ul>
             <div>
-                {/* <li>Top rated</li> */}
                 <label htmlFor="top_rated">Top rated</label>
                 <input onClick = {() => props.updateFilter('top_rated')} type="radio" name="filter" id="top_rated"/>
               </div>
@@ -43,7 +38,6 @@ const Header = (props: any) => {
                 <label htmlFor="now_playing">Now playing</label>
                 <input  onClick = {() => props.updateFilter('now_playing')}  type="radio" name="filter" id="now_playing"/>
               </div>
-              
             </ul>
         </div>
       </section>

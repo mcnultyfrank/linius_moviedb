@@ -9,8 +9,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Card = (props: any) => {
 
-  const {title, genres, vote_average, homepage, overview, original_language, release_date ,poster_path } = props.movie
-  
+  const {title, genres, vote_average, overview, original_language, release_date} = props.movie
   
 
   return (
@@ -23,7 +22,6 @@ const Card = (props: any) => {
           </div>
           <div>
             <p>{vote_average}<FontAwesomeIcon icon = {faStar} className = {styles.star} /></p>
-
           </div>            
         </div>
         <footer>

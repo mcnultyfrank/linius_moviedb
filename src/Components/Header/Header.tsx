@@ -6,8 +6,6 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 
-
-
 const Header = (props: any) => {
   const [open, setOpen] = useState(false);
   const noDisplayContents = {
@@ -41,7 +39,6 @@ const Header = (props: any) => {
             </ul>
         </div>
       </section>
-
     </div>
   );
 };

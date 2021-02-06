@@ -2,12 +2,17 @@
 
 .cardContainer {
     width: 100vw;
-    height: 90vh;
-    background-color: $offWhite;
+    height: auto;
+    background-color: $black;
     text-align: center;
+    .moveCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    }
     h3 {
         background-color:  rgba($color: #BF3641, $alpha: 0.8);
-        padding: 2vh;
+        padding: 2vh; 
     }
 
 }

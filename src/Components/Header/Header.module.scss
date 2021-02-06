@@ -3,8 +3,8 @@
 .header {
     border-bottom: 1px solid rgba($color: red, $alpha: 0.2);
     box-shadow: 0 2px 2px 0 rgba(34,36,38,.15);
-    background: #F2F2F2;    
-    color: $black;
+    background: $black;    
+    color: white;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -12,14 +12,14 @@
     width: 100vw;
     padding: 0.5vw;
     h1 {
-        background-color: rgba(34,36,38,.15);
+        background-color: rgba($color: $offWhite, $alpha: 0.2);
         font-size: 3rem;
         border-bottom-right-radius: 20px;
         border-top-left-radius: 20px;
 
         padding: 0.5vw;
         span {
-            color: #BF3641;
+            color: #614f51;
             border-radius: 5px;
 
         }
@@ -61,6 +61,7 @@
     color: $offWhite;
     box-shadow: 0 2px 2px 0 rgba(34,36,38,.15);
     background: rgba($color: $black, $alpha: 1) ;   
+    border-bottom-right-radius: 50px;
     ul {
         display: flex;
         flex-direction: column;

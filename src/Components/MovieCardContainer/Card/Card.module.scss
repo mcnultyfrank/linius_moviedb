@@ -3,21 +3,22 @@
     .card {
         border-bottom: 1px solid rgba($color: red, $alpha: 0.2);
         box-shadow: 0 2px 2px 0 rgba(34,36,38,.15);
-        background: #F2F2F2;
+        background: rgba($color: $offWhite, $alpha: 0.1);
         border-radius: 1px;
-        padding: 1vw;
+        // padding: 1vw;
         margin: 2vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
+        color: white;
         .infoContainer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         img {
-            width: 70%;
+            width: 20%;
             align-self: center;
-            border-radius: 5px;
         }
         div{
             display: flex;
@@ -27,8 +28,14 @@
             
         }
         h1 {
-            padding: 1vh;
+            background-color: rgba($color: $offWhite, $alpha: 0.2);
             font-size: 1.5rem;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            padding: 0.5vw;
+            margin: 1vw;
+            color: rgba($color: $offWhite, $alpha: 1) ;
+
         }
         p {
             padding: 1vh;
@@ -41,6 +48,7 @@
         }
     }
         footer {
+            position: fixed;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;

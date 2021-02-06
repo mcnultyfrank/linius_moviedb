@@ -1,18 +1,68 @@
 @import "../../Assets/Variables.scss";
 
 .cardContainer {
-    width: 100vw;
-    height: auto;
+
     background-color: $black;
     text-align: center;
+    // display: grid;
+    grid-template-columns: 1fr ;
+    .twoColumns{
+        display: grid;
+        width: 100vw;
+        height: auto;
+        grid-template-columns: 1fr 1fr;  
+
+    }
+    .oneColumns{
+        display: grid;
+        width: 100vw;
+        height: auto;
+        grid-template-columns: 1fr;  
+    }
     .moveCardContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+  
+    
     }
     h3 {
-        background-color:  rgba($color: #BF3641, $alpha: 0.8);
-        padding: 2vh; 
+        padding: 1vh; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            p{
+                padding-right: 1vw;
+                color: white;
+                font-weight: 400;
+            }
+        }
+
+        .columnIcon {
+            color: white;
+            cursor: pointer;
+            transition: 1s;
+            transform: rotate(90deg);
+            &:hover{
+                transform: rotate(70deg);
+            }
+        }
+        .columnIconRotate {
+            color: white;
+            cursor: pointer;
+            transition: 1s;
+            transform: rotate(0deg);
+            &:hover{
+                transform: rotate(20deg);
+            }
+
+        }
+
         span{
             background-color: rgba($color: $offWhite, $alpha: 0.2);
             border-bottom-right-radius: 20px;

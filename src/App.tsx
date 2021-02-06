@@ -34,9 +34,9 @@ function App(props:string){
   useEffect(() => { 
       fetchMyApiData(filter, API_KEY);
   }, [filter])
-  useEffect(() => { 
-    searchMyApiData('fight club', API_KEY);
-}, [])
+//   useEffect(() => { 
+//     searchMyApiData('fight club', API_KEY);
+// }, [])
   useEffect(() => { 
     fetchMyApiImageData(`${Math.floor(Math.random() * 1000).toString()}/images`, API_KEY);
 }, [])

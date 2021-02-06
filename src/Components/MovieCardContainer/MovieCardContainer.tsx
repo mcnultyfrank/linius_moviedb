@@ -9,11 +9,11 @@ const MovieCardContainer = (props: any) => {
     <div>
       <section className = {styles.cardContainer}>
         <div  className = {styles.moveCardContainer}>
-        {props.image.slice(0, 3).map(image => {
+        {props.image !== undefined ? props.image.slice(0, 3).map(image => {
           return <MovieCard image = {image} />
-        })}
+        }) : null}
         </div>
-        <h3>{props.filter === 'top_rated' ? 'Top rated movies' : 'Movies currently showing in cinema'}</h3>
+        <h3><span>Filter:</span> {props.filter === 'top_rated' ? 'Top rated' : 'currently showing in cinema'}</h3>
         {props.movies.map((movie: any) => {
           return <Card movie = {movie}/>
           })} 

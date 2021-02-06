@@ -20,13 +20,16 @@ const Card = (props: any) => {
               <img src={`https://image.tmdb.org/t/p/original` + backdrop_path} alt=""/>
               <h1>{title}</h1>
               <p>({release_date})</p>
-            {/* <p>{overview}</p> */}
+            {/* <p className = {styles.overview}>{overview.substring(0, 150)}...</p> */}
           </div>
           <div>
             <p>{`${vote_average}`}<FontAwesomeIcon icon = {faStar} className = {styles.star} /></p>
-          </div>         
+          </div>    
         </div>
-      </article>      
+      </article>
+      <div className = {styles.modalContainer}>
+     
+      </div>
     </div>
   );
 };

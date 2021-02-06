@@ -91,7 +91,7 @@
             text-align: center;
             justify-content: space-between;
             width: 90vw;
-            padding: 2vw;
+            padding: 1vw;
             border-bottom: 1px solid white;
             li {
                 font-size: 3vw;
@@ -101,7 +101,9 @@
                 cursor: pointer;
                 font-size: 2vw;
                 transition: 0.5s;
+                text-decoration: none;
                 &:hover{
+                    text-decoration: underline;
                     color: #BF3641;
                 }
             }

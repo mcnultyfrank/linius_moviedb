@@ -59,6 +59,14 @@ const Header = (props: any) => {
                 <label htmlFor="now_playing">Now playing</label>
                 <input  onClick = {() => props.updateFilter('now_playing')}  type="radio" name="filter" id="now_playing"/>
               </div>
+              <div>
+                <label htmlFor="popular">Popular</label>
+                <input  onClick = {() => props.updateFilter('popular')}  type="radio" name="filter" id="popular"/>
+              </div>
+              <div>
+                <label htmlFor="upcoming">Upcoming</label>
+                <input  onClick = {() => props.updateFilter('upcoming')}  type="radio" name="filter" id="upcoming"/>
+              </div>
             </ul>
           <div className = {styles.navFooter}>
 

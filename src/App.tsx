@@ -9,7 +9,7 @@ import './App.css';
 function App(props:string){
   const [movies, setMovies] = useState([]);
   const [image, setImage] = useState([])
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('upcoming');
   const [filter, setFilter] = useState('now_playing');
   const API_KEY = 'c56be1cd759c41c97751b89559085335';
   

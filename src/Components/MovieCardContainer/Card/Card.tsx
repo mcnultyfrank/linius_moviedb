@@ -10,11 +10,8 @@ import { faStar, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icon
 const Card = (props: any) => {
 
   const [display, setDisplay] = useState(false);
-
   const {title, genres, vote_average, overview, original_language, release_date, backdrop_path} = props.movie
   
-console.log(props.movie);
-
   return (
     <div>
       <article className = {styles.card}>

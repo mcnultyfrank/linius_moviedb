@@ -19,13 +19,12 @@ const MovieCardContainer = (props: any) => {
     return  setFilterState("Top Rated Movies")
     }
   }
-  
-  
+
   useEffect(() => {
     displayFilter();
 
     },[props.filter]);
-  console.log(filterState);
+
   
   
 
